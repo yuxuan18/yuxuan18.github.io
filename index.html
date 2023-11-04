@@ -10,7 +10,8 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&amp;display=swap" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&amp;display=swap" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
@@ -20,7 +21,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Yuxuan Zhu</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="..." /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -28,7 +29,6 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publication">Publication</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="assets/resume.pdf">Resume</a></li>
                 </ul>
             </div>
@@ -42,7 +42,7 @@
                         Yuxuan
                         <span class="text-primary">Zhu</span>
                     </h1>
-                    <p class="lead mb-5"><a href="mailto:yxx404@illinois.edu">yxx404@illinois.edu</a></p>
+                    <p class="lead mb-5"><a class="text-mono" href="mailto:yxx404@g.illinois.edu">yxx404@g.illinois.edu</a></p>
                     <p class="lead mb-5">
                         I am a first-year Ph.D. student in the
                         <a href="https://cs.illinois.edu/">University of Illinois at Urbana-Champaign.</a>
@@ -71,28 +71,23 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">University of Illinois at Urbana-Champaign</h3>
-                            <div class="subheading mb-3">Ph.D.</div>
-                            <div>Computer Science</div>
+                            <div class="subheading mb-3">Ph.D. in Computer Science</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2023 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-emph">August 2023 - Present</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">University of Michigan</h3>
-                            <div class="subheading mb-3">Bachelor of Science and Engineering</div>
-                            <div>Computer Science</div>
-                            <p>GPA: 3.92</p>
+                            <div class="subheading mb-3">B.S. in Computer Science</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2021 - April 2023</span></div>
+                        <div class="flex-shrink-0"><span class="text-emph">August 2021 - April 2023</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Shanghai Jiao Tong University</h3>
-                            <div class="subheading mb-3">Bachelor of Science and Engineering</div>
-                            <div>Electrical and Computer Engineering</div>
-                            <p>GPA: 3.56</p>
+                            <div class="subheading mb-3">B.S.E. in Electrical and Computer Engineering</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2019 - May 2023</span></div>
+                        <div class="flex-shrink-0"><span class="text-emph">September 2019 - May 2023</span></div>
                     </div>
                 </div>
             </section>
@@ -101,27 +96,32 @@
             <section class="resume-section" id="publication">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Publication</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <a href="https://arxiv.org/abs/2106.05237">Federated Learning with Heterogeneous Data and Models</a>
-                            (Under review)
-                        </li>
+                    <ul class="fa-ul mb-0 text-main bullet">
+                        <li>Federated Learning with Heterogeneous Models (Under review)</li>
+                        <li><a href="assets/pub/slabcity.pdf">SlabCity: Whole-Query Optimization using Program Synthesis</a></li>
+                        Rui Dong, Jie Liu,
+                        <u>Yuxuan Zhu,</u>
+                        Cong Yan, Barzan Mozafari, Xinyu Wang
+                        <br />
+                        <em>VLDB 2023</em>
+                        <!---->
+                        <li><a href="assets/pub/video.pdf">An Energy-efficient Computing Offloading Framework for Blockchain-enaled Video Streaming Systems</a></li>
+                        Shijing Yuan, Jie Li,
+                        <u>Yuxuan Zhu,</u>
+                        Chentao Wu, Yue Ding
+                        <br />
+                        <em>GlobeCom 2022</em>
+                        <!---->
+                        <li><a href="assets/pub/sharding.pdf">Sharding for Blockchain based Mobile Edge Computing System: A Deep Reinforcement Learning Approach</a></li>
+                        Shijing Yuan, Jie Li, Jinghao Liang,
+                        <u>Yuxuan Zhu,</u>
+                        Xiang Yu, Jianping Chen, Chentao Wu
+                        <br />
+                        <em>GlobeCom 2021</em>
                     </ul>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
-                        </li>
-                    </ul>
-                </div>
-            </section>
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
