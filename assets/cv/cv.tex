@@ -1,0 +1,113 @@
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{letterpaper, margin=0.75in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{hyperref} % For hyperlinks
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+%%%%%%%%%%
+
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyhead[L]{\textit{John Doe}}
+\fancyhead[R]{\textit{\# month \#year}}
+\thispagestyle{empty} % Remove header from the first page
+\newcommand{\pubitem}[4]{#1. ''#2" \textit{#3} (#4)}
+% Header
+\begin{flushleft}
+\textbf{\LARGE Yuxuan Zhu}\\[2pt] % Name
+First-year Ph.D. student at UIUC CS.
+\\ \href{mailto:yxx404@illinois.edu}{yxx404@illinois.edu} $\diamondsuit$ \href{https://yuxuan18.github.io/}{https://yuxuan18.github.io/}% Contact info
+\end{flushleft}
+
+% Research Section
+\section*{RESEARCH INTERESTS}
+\noindent
+Approximate query processing and its application to unstructured data. Machine learning systems.
+% Education Section
+\section*{EDUCATION}
+\noindent
+\textbf{University of Illinois Urbana-Champaign} \hfill 2023 | present\\ % University name and location
+Ph.D. in computer science \\ % Degree and GPA
+Advisor: \href{https://ddkang.github.io/}{Daniel Kang} % Additional info
+\vspace{0.1in}
+
+\noindent
+\textbf{University of Michigan} \hfill 2021 | 2023\\ % University name and location
+Bachelor of Science and Engineering, Computer Science % Degree and GPA
+\vspace{0.1in}
+
+\noindent
+\textbf{Shanghai Jiao Tong University} \hfill 2019 | 2023\\
+Bachelor of Science, Electrical and Computer Engineering%
+
+% Experience Section
+\section*{RESEARCH EXPERIENCE}
+\noindent
+\textbf{University of Illinois Urbana-Champaign} \hfill 2023 | present\\ % Company name and location
+Advised by Prof. \href{https://ddkang.github.io/}{Daniel Kang}. % Position and duration
+\begin{itemize}
+    \item Approximate query processing with joins over unstructured data.
+\end{itemize}
+
+\noindent
+\textbf{Symbiotic Lab, University of Michigan} \hfill 2022-2023\\ % Company name and location
+Advised by \href{https://fanlai.me/}{Fan Lai} and Prof. \href{https://www.mosharaf.com/}{Mosharaf Chowdhury}. % Position and duration
+\begin{itemize}
+    \item Built \textbf{FedTrans}, a personalized on-device ML training system.
+\end{itemize}
+
+\noindent
+\textbf{Michigan Intelligent Programming Lab, University of Michigan} \hfill 2021-2023\\ % Company name and location
+Advised by Prof. \href{https://web.eecs.umich.edu/~xwangsd/}{Xinyu Wang}. % Position and duration
+\begin{itemize}
+    \item Developed \textbf{SlabCity}, a whole-query optimization system leveraging program synthesis.
+\end{itemize}
+
+
+% Publications section
+\section*{PUBLICATIONS}
+\begin{itemize}
+    \item \pubitem{\textbf{Yuxuan Zhu}, Jiachen Liu, Fan Lai, Mosharaf Chowdhury}{FedTrans: Efficient Federated Learning via Multi-Model Transformation}{To appear in MLSys}{2024}
+    \item \pubitem{Rui Dong, Jie Liu, \textbf{Yuxuan Zhu}, Cong Yan, Barzan Mozafari, Xinyu Wang}{SlabCity: Whole-Query Optimization using Program Synthesis
+    }{PVLDB}{2023}
+    \item \pubitem{Shijing Yuan, Jie Li, \textbf{Yuxuan Zhu}, Chentao Wu, Yue Ding}{An Energy-efficient Computing Offloading Framework for Blockchain-enaled Video Streaming Systems}{GlobeCom}{2022}
+    \item \pubitem{Shijing Yuan, Jie Li, Jinghao Liang, \textbf{Yuxuan Zhu}, Xiang Yu, Jianping Chen, Chentao Wu}{Sharding for Blockchain based Mobile Edge Computing System: A Deep Reinforcement Learning Approach}{GlobeCom}{2021}
+\end{itemize}
+
+\section*{AWARDS}
+\begin{itemize}
+    \item \textbf{Winner} of Microsoft Student Hackathon - Hack for Education (AI\&ML). \hfill Nov. 2021
+    \item \textbf{Final List Award} in \href{https://github.com/zyxum/2021-ICM}{The Interdisciplinary Contest in Modeling}. \hfill May. 2021
+    \item \textbf{Nominee for Tang Junyuan Scholarship}. \hfill Aug. 2021
+    \item \textbf{Grand Prize} in \href{https://github.com/zyxum/Media-Fridge-Final}{School-enterprise Joint Creative Contest Organized by Media}. \hfill Nov. 2020
+    \item \textbf{Bronze Medal} in University Physics Competition. \hfill Dec. 2020
+    \item \textbf{Scholarship for Excellent Academic Performance}. \hfill Dec. 2020
+    \item \textbf{Excellent Young Volunteer} in admission activities of SJTU. \hfill Sep. 2020
+    \item \textbf{Honorable Mention by Judgers} in COVID-19 Challenges Competition. \hfill Jul. 2020
+\end{itemize}
+
+
+\section*{OTHER EXPERIENCES}
+\begin{itemize}
+    \item Grader of MATH 417 Matrix Algebra \hfill 2022
+    \item Winter program in St. Petersburg Polytechnic University \hfill 2020
+\end{itemize}
+
+\end{document}
+About
