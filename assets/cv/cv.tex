@@ -10,6 +10,12 @@
 \usepackage{hyperref} % For hyperlinks
 \usepackage{tabularx}
 \usepackage{fancyhdr}
+\usepackage{xcolor}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!red,
+  urlcolor=blue!80!red
+}
 
 % Formatting
 \setlist{noitemsep} % Removes item separation
@@ -27,7 +33,7 @@
 \fancyhead[L]{\textit{John Doe}}
 \fancyhead[R]{\textit{\# month \#year}}
 \thispagestyle{empty} % Remove header from the first page
-\newcommand{\pubitem}[4]{#1. ''#2" \textit{#3} (#4)}
+\newcommand{\pubitem}[4]{#1. ``#2'' \textit{#3} (#4)}
 % Header
 \begin{flushleft}
 \textbf{\LARGE Yuxuan Zhu}\\[2pt] % Name
@@ -38,7 +44,8 @@ Second-year Ph.D. student at UIUC CS.
 % Research Section
 \section*{RESEARCH INTERESTS}
 \noindent
-Efficient and theoretically grounded data systems for machine learning and approximate query processing.
+Efficient and theoretically grounded data systems for data analytics and artificial intelligence.
+Data + AI/ML
 % Education Section
 \section*{EDUCATION}
 \noindent
@@ -84,7 +91,7 @@ Advised by Prof. \href{https://web.eecs.umich.edu/~xwangsd/}{Xinyu Wang}. % Posi
 % Publications section
 \section*{PUBLICATIONS}
 \begin{itemize}
-    \item \pubitem{\textbf{Yuxuan Zhu}, Daniel Kang}{Efficient Approximate Query Processing with Block Sampling}{To Appear in CIDR}{2025}
+    \item \pubitem{\textbf{Yuxuan Zhu}, Daniel Kang}{Efficient Approximate Query Processing with Block Sampling}{CIDR}{2025}
     \item \pubitem{\textbf{Yuxuan Zhu}, Jiachen Liu, Fan Lai, Mosharaf Chowdhury}{FedTrans: Efficient Federated Learning via Multi-Model Transformation}{MLSys}{2024}
     \item \pubitem{Rui Dong, Jie Liu, \textbf{Yuxuan Zhu}, Cong Yan, Barzan Mozafari, Xinyu Wang}{SlabCity: Whole-Query Optimization using Program Synthesis
     }{PVLDB}{2023}
