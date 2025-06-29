@@ -30,26 +30,30 @@
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead{}
-\fancyhead[L]{\textit{John Doe}}
-\fancyhead[R]{\textit{\# month \#year}}
+\fancyhead[L]{\textit{Yuxuan Zhu}}
+\fancyhead[R]{\textit{\today}}
 \thispagestyle{empty} % Remove header from the first page
-\newcommand{\pubitem}[4]{#1. ``#2'' \textit{#3} (#4)}
+\newcommand{\pubitem}[4]{#1. ``#2'' \textit{#3} #4}
 % Header
 \begin{flushleft}
 \textbf{\LARGE Yuxuan Zhu}\\[2pt] % Name
-Second-year Ph.D. student at UIUC CS.
-\\ \href{mailto:yxx404@illinois.edu}{yxx404@illinois.edu} $\diamondsuit$ \href{https://yuxuan18.github.io/}{https://yuxuan18.github.io/}% Contact info
+AI for Security \& Statistically Rigorous Data Systems for Analytics and AI
+\\ \href{mailto:yxx404@illinois.edu}{yxx404@illinois.edu} $\diamondsuit$ \href{https://yuxuan18.github.io}{yuxuan18.github.io}% Contact info
 \end{flushleft}
 
 % Research Section
 \section*{RESEARCH INTERESTS}
 \noindent
-Efficient and theoretically grounded computer systems for data management and analysis.
+\begin{itemize}
+    \item Applying AI methods to strengthen cybersecurity attacks and defenses.
+    \item Statistically rigorous evaluation of AI/LLM agents.
+    \item Efficient, theoretically sound systems for data analytics.
+\end{itemize}
 % Data + AI/ML
 % Education Section
 \section*{EDUCATION}
 \noindent
-\textbf{University of Illinois Urbana-Champaign} \hfill 2023 | present\\ % University name and location
+\textbf{University of Illinois Urbana-Champaign} \hfill 2023 | present, exp. 2028\\ % University name and location
 Ph.D. in computer science \\ % Degree and GPA
 Advisor: \href{https://ddkang.github.io/}{Daniel Kang} % Additional info
 \vspace{0.1in}
@@ -66,56 +70,64 @@ Bachelor of Science, Electrical and Computer Engineering%
 % Experience Section
 \section*{RESEARCH EXPERIENCE}
 \noindent
-\textbf{University of Illinois Urbana-Champaign} \hfill 2023 | present\\ % Company name and location
-Advised by Prof. \href{https://ddkang.github.io/}{Daniel Kang}. % Position and duration
+\textbf{University of Illinois Urbana-Champaign} \hfill 2023 | present 
 \begin{itemize}
-    \item Approximate query processing with joins over unstructured data.
-    \item Built \textbf{PilotDB}, a database-agnostic online approximate query processing system with a priori error guarantees.
+    % \item Assessing agentic benchmarks for rigorous evaluation.
+    % \item Approximate query processing with joins over unstructured data.
+    \item Built \textbf{CVE-Bench}, first benchmark evaluating AI agents’ ability to exploit 40 real-world severe CVEs; adopted by \href{https://github.com/usnistgov/aisi-cyber-evals}{US AI Safety Institute}.
+    \item Designed \textbf{PilotDB}, online database-agnostic approximate query processing system with statistical guarantees; $>5\times$ speedups on TPC-H with $\le$ 5\% error.
+    \item Assessing statistical rigor of AI agent benchmarks (first author, under review).
+    \item Multi-agent framework that autonomously exploits zero-day web vulnerabilities (first author, under review).
+    \item Approximate join processing over unstructured data (first author, under review).
 \end{itemize}
 
 \noindent
-\textbf{Symbiotic Lab, University of Michigan} \hfill 2022-2023\\ % Company name and location
-Advised by \href{https://fanlai.me/}{Fan Lai} and Prof. \href{https://www.mosharaf.com/}{Mosharaf Chowdhury}. % Position and duration
+\textbf{Symbiotic Lab, University of Michigan} (Advised by \href{https://fanlai.me/}{Fan Lai} and Prof. \href{https://www.mosharaf.com/}{Mosharaf Chowdhury}.) \hfill 2022 | 2023 % Company name and location
+ % Position and duration
 \begin{itemize}
     \item Built \textbf{FedTrans}, a personalized on-device distributed ML training system.
 \end{itemize}
 
 \noindent
-\textbf{Michigan Intelligent Programming Lab, University of Michigan} \hfill 2021-2023\\ % Company name and location
-Advised by Prof. \href{https://web.eecs.umich.edu/~xwangsd/}{Xinyu Wang}. % Position and duration
+\textbf{Intelligent Programming Lab, University of Michigan} (Advised by Prof. \href{https://web.eecs.umich.edu/~xwangsd/}{Xinyu Wang}.) \hfill 2021 | 2023
 \begin{itemize}
     \item Developed \textbf{SlabCity}, a whole-query optimization system leveraging program synthesis.
 \end{itemize}
 
 
 % Publications section
-\section*{PUBLICATIONS}
+\section*{SELECTED PUBLICATIONS}
 \begin{itemize}
-    \item \pubitem{\textbf{Yuxuan Zhu}, Tengjun Jin, Stefanos Baziotis, Chengsong Zhang, Charith Mendis, Daniel Kang}{Database-Agnostic Online Approximate Query Processing with A Priori Error Guarantees}{SIGMOD}{2025}
-    \item \pubitem{\textbf{Yuxuan Zhu}, Daniel Kang}{Efficient Approximate Query Processing with Block Sampling}{CIDR}{2025}
-    \item \pubitem{\textbf{Yuxuan Zhu}, Jiachen Liu, Fan Lai, Mosharaf Chowdhury}{FedTrans: Efficient Federated Learning via Multi-Model Transformation}{MLSys}{2024}
-    \item \pubitem{Rui Dong, Jie Liu, \textbf{Yuxuan Zhu}, Cong Yan, Barzan Mozafari, Xinyu Wang}{SlabCity: Whole-Query Optimization using Program Synthesis
-    }{PVLDB}{2023}
-    \item \pubitem{Shijing Yuan, Jie Li, \textbf{Yuxuan Zhu}, Chentao Wu, Yue Ding}{An Energy-efficient Computing Offloading Framework for Blockchain-enaled Video Streaming Systems}{GlobeCom}{2022}
-    \item \pubitem{Shijing Yuan, Jie Li, Jinghao Liang, \textbf{Yuxuan Zhu}, Xiang Yu, Jianping Chen, Chentao Wu}{Sharding for Blockchain based Mobile Edge Computing System: A Deep Reinforcement Learning Approach}{GlobeCom}{2021}
+    \item \pubitem{\textbf{Y. Zhu}, A. Kellermann, A. Gupta, P. Li, R. Fang, R. Bindu, D. Kang}{Teams of LLM Agents Can Exploit Zero-Day Vulnerabilities}{Preprint}{2025}.
+    \item \pubitem{\textbf{Y. Zhu}, A. Kellermann, D. Bowman, D. Kang, and others}{CVE-Bench: A Benchmark for AI Agents' Ability to Exploit Real-World Web Application Vulnerabilities}{ICML}{2025} Spotlight.
+    \item \pubitem{\textbf{Y. Zhu}, T. Jin, S. Baziotis, C. Zhang, C. Mendis, D. Kang}{Database-Agnostic Online Approximate Query Processing with A Priori Error Guarantees}{SIGMOD}{2025}.
+    \item \pubitem{\textbf{Y. Zhu}, D. Kang}{Efficient Approximate Query Processing with Block Sampling}{CIDR}{2025}.
+    \item \pubitem{\textbf{Y. Zhu}, J. Liu, F. Lai, M. Chowdhury}{FedTrans: Efficient Federated Learning via Multi-Model Transformation}{MLSys}{2024}.
+    \item \pubitem{R. Dong, J. Liu, \textbf{Y. Zhu}, C. Yan, B. Mozafari, X. Wang}{SlabCity: Whole-Query Optimization using Program Synthesis
+    }{PVLDB}{2023}.
+    % \item \pubitem{Shijing Yuan, Jie Li, \textbf{Yuxuan Zhu}, Chentao Wu, Yue Ding}{An Energy-efficient Computing Offloading Framework for Blockchain-enaled Video Streaming Systems}{GlobeCom}{2022}
+    % \item \pubitem{Shijing Yuan, Jie Li, Jinghao Liang, \textbf{Yuxuan Zhu}, Xiang Yu, Jianping Chen, Chentao Wu}{Sharding for Blockchain based Mobile Edge Computing System: A Deep Reinforcement Learning Approach}{GlobeCom}{2021}
 \end{itemize}
 
-\section*{AWARDS}
+\section*{SELECTED HONORS}
 \begin{itemize}
-    \item \textbf{Winner} of Microsoft Student Hackathon - Hack for Education (AI\&ML). \hfill Nov. 2021
-    \item \textbf{Final List Award} in \href{https://github.com/zyxum/2021-ICM}{The Interdisciplinary Contest in Modeling}. \hfill May. 2021
-    \item \textbf{Nominee for Tang Junyuan Scholarship}. \hfill Aug. 2021
-    \item \textbf{Grand Prize} in \href{https://github.com/zyxum/Media-Fridge-Final}{School-enterprise Joint Creative Contest Organized by Media}. \hfill Nov. 2020
-    \item \textbf{Bronze Medal} in University Physics Competition. \hfill Dec. 2020
-    \item \textbf{Scholarship for Excellent Academic Performance}. \hfill Dec. 2020
-    \item \textbf{Excellent Young Volunteer} in admission activities of SJTU. \hfill Sep. 2020
-    \item \textbf{Honorable Mention by Judgers} in COVID-19 Challenges Competition. \hfill Jul. 2020
+    \item \textbf{2nd Prize}, \href{https://www.mlsafety.org/safebench/winners}{SafeBench} competition. \hfill 2025
+    \item \textbf{Winner}, Microsoft Student Hackathon - Hack for Education (AI\&ML). \hfill 2021
+    % \item \textbf{Final List Award} in \href{https://github.com/zyxum/2021-ICM}{The Interdisciplinary Contest in Modeling}. \hfill May. 2021
+    \item Undergraduate awards: Tang Junyuan Scholarship, Univ. Physics Comp. Bronze, Academic Scholarship. \hfill 2020 | 2021
+    % \item \textbf{}. \hfill Aug. 2021
+    % \item \textbf{Grand Prize} in \href{https://github.com/zyxum/Media-Fridge-Final}{School-enterprise Joint Creative Contest Organized by Media}. \hfill Nov. 2020
+    % \item \textbf{Bronze Medal} in . \hfill Dec. 2020
+    % \item \textbf{Scholarship for Excellent Academic Performance}, SJTU. \hfill Dec. 2020
+    % \item \textbf{Excellent Young Volunteer} in admission activities of SJTU. \hfill Sep. 2020
+    % \item \textbf{Honorable Mention by Judgers} in COVID-19 Challenges Competition. \hfill Jul. 2020
 \end{itemize}
 
 
-\section*{OTHER EXPERIENCES}
+\section*{TEACHING \& SERVICE}
 \begin{itemize}
-    \item Grader of MATH 417 Matrix Algebra \hfill 2022
+    \item Artifact reviewer, SIGMOD \hfill 2024
+    \item Grader, MATH 417 Matrix Algebra, University of Michigan \hfill 2022
     % \item Winter program in St. Petersburg Polytechnic University \hfill 2020
 \end{itemize}
 
