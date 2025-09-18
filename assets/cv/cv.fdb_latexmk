@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1755722254.68966 "/Users/yuxuan/personal_webpage/src/assets/cv/cv.tex" "cv.pdf" "cv" 1755722255.14447 0
-  "/Users/yuxuan/personal_webpage/src/assets/cv/cv.tex" 1755722254.58924 8859 c56b988e7bce0f2d57b2e7c48bb45a8c ""
+["pdflatex"] 1758226361.51205 "/Users/yuxuan/personal_webpage/src/assets/cv/cv.tex" "cv.pdf" "cv" 1758226362.34802 0
+  "/Users/yuxuan/personal_webpage/src/assets/cv/cv.tex" 1758226361.34669 9149 c6d3a5d12461dbc5f4f8d56a1684ccd3 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm" 1136768653 1536 c4f439db76ef96a9c53bc437f35ffe20 ""
@@ -75,9 +75,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1751135207 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "cv.aux" 1755722255.10219 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
-  "cv.out" 1755722254.95378 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "cv.tex" 1755722254.58924 8859 c56b988e7bce0f2d57b2e7c48bb45a8c ""
+  "cv.aux" 1758226362.27477 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
+  "cv.out" 1758226362.01611 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "cv.tex" 1758226361.34669 9149 c6d3a5d12461dbc5f4f8d56a1684ccd3 ""
   (generated)
   "cv.aux"
   "cv.log"
