@@ -7,7 +7,7 @@ all:
 	cp cv.pdf ..
 
 clean:
-	rm -f $(FILE).aux $(FILE).bbl $(FILE).blg $(FILE).log $(FILE).dvi $(FILE).ps $(FILE).out
+	rm -f $(FILE).aux $(FILE).bbl $(FILE).blg $(FILE).log $(FILE).dvi $(FILE).ps $(FILE).out $(FILE).fdb_latexmk $(FILE).fls $(FILE).pdf $(FILE).synctex.gz
 
 view: all
 	open -a Preview $(FILE).pdf &
