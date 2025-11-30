@@ -37,17 +37,16 @@
 % Header
 \begin{flushleft}
 \textbf{\LARGE Yuxuan Zhu}\\[2pt] % Name
-AI Agents Environments and Evaluations \& AI and Statistics for Data Analytics
-\\ \href{mailto:yxx404@illinois.edu}{yxx404@illinois.edu} $\diamondsuit$ \href{https://yuxuan18.github.io}{yuxuan18.github.io}% Contact info
-\\ (734)-730-1618 $\diamondsuit$ 23 Thatcham Dr Apt 10, Champaign, IL 61820, USA
+AI Agent Environment and Evaluation \& LLM Reinforcement Post-Training \& AI and Statistics for Analytics
+\\ \href{mailto:yxx404@illinois.edu}{yxx404@illinois.edu} $\diamondsuit$ \href{https://scholar.google.com/citations?user=VxMpvw0AAAAJ&hl=en&authuser=1}{Google Scholar} $\diamondsuit$ \href{https://yuxuan18.github.io}{Website}
 \end{flushleft}
-
+ 
 % Research Section
 \section*{RESEARCH INTERESTS}
 \noindent
 \begin{itemize}
-    \item Ecosystems and environments for AI agents in critical domains (e.g., cybersecurity, data engineering).
-    \item Statistically rigorous and trustworthy evaluation of AI/LLM agents.
+    \item Rigorous environments and evaluation for AI agents in critical domains (e.g., cybersecurity, data engineering).
+    \item Reinforcement Learning with Verifiable Rewards (RLVR) for LLMs
     \item Efficient, theoretically sound systems for AI-powered data analytics.
 \end{itemize}
 % Data + AI/ML
@@ -75,23 +74,24 @@ Bachelor of Science, Electrical and Computer Engineering%
 \begin{itemize}
     % \item Assessing agentic benchmarks for rigorous evaluation.
     % \item Approximate query processing with joins over unstructured data.
-    \item Built \textbf{ABC}, the first checklist and assessment framework for the rigorous AI agent evaluation; NeurIPS; cross-institutional work with professors at Stanford, University of California Berkeley, Yale University, Princeton University, MIT, UK AI Safety Instutite, University of Oxford; \href{https://rdi.berkeley.edu/agentx/}{first place at Berkeley AgentX Summit (Benchmark \& Evaluation Track)}.
+    \item Built \textbf{ABC}, the first checklist and assessment framework for the rigorous AI agent evaluation; NeurIPS 2025; \href{https://rdi.berkeley.edu/agentx/}{first place at Berkeley AgentX Summit (Benchmark \& Evaluation Track)}.
     \item Built \textbf{HPTSA}, a multi-agent framework that autonomously exploits zero-day web vulnerabilities; media mention by \href{https://www.techradar.com/pro/could-chatgpt-be-the-next-big-cybersecurity-worry-researchers-say-it-can-crack-systems-faster-than-ever-before}{Tech Radar}, \href{https://www.axios.com/2024/04/26/ai-model-hacking-security-vulnerabilities}{Axios}, \href{https://www.theregister.com/2024/04/17/gpt4_can_exploit_real_vulnerabilities/}{The Register}, \href{https://www.newscientist.com/article/2418201-gpt-4-developer-tool-can-hack-websites-without-human-help/}{New Scientist}, and \href{https://fortune.com/crypto/2023/05/04/artificial-intelligence-zero-knowledge-proofs-zkml-verify-ai/}{Fortune}.
     \item Built \textbf{CVE-Bench}, the first benchmark evaluating AI agents’ ability to exploit 40 real-world severe CVEs; adopted by \href{https://github.com/usnistgov/aisi-cyber-evals}{US AI Safety Institute}; ICML spotlight; \href{https://www.mlsafety.org/safebench/winners}{SafeBench 2025 winner}; \href{https://rdi.berkeley.edu/agentx/}{second place at Berkeley AgentX Summit (AI Safety \& Alignment Track)}; media mention by \href{https://www.technologyreview.com/2025/04/04/1114228/cyberattacks-by-ai-agents-are-coming/}{MIT Tech Review}.
-    \item Designed \textbf{PilotDB}, online database-agnostic approximate query processing system with statistical guarantees; $>5\times$ speedups on TPC-H with $\le$ 5\% error.
+    \item Designed \textbf{PilotDB}, an online database-agnostic approximate query processing system with statistical guarantees; $>5\times$ speedups on TPC-H with $\le$ 5\% error.
     \item Built \textbf{UTBoost}, the first AI agent benchmark framework for software engineering tasks augmented using LLM-generated test cases; impacting 24\% agents on the SWE-bench Verified Leaderboard.
-    \item Approximate join processing over unstructured data (first author, under review).
+    \item \textbf{RLVR} projects: investigating empirical generalizability of RLVR across application domains; investigating empirical and theoretical impact of reward noise in RLVR for LLMs; applying RLVR to reach expert-level text-to-SQL performance with high-quality human data (ongoing and under review).
+    % \item Approximate join processing over unstructured data (first author, under review).
 \end{itemize}
 
 \noindent
-\textbf{Symbiotic Lab, University of Michigan} (Advised by \href{https://fanlai.me/}{Fan Lai} and Prof. \href{https://www.mosharaf.com/}{Mosharaf Chowdhury}.) \hfill 2022 | 2023 % Company name and location
+\textbf{Symbiotic Lab, University of Michigan} (Advised by \href{https://fanlai.me/}{Fan Lai} and Prof. \href{https://www.mosharaf.com/}{Mosharaf Chowdhury}) \hfill 2022 | 2023 % Company name and location
  % Position and duration
 \begin{itemize}
     \item Built \textbf{FedTrans}, a personalized on-device distributed ML training system.
 \end{itemize}
 
 \noindent
-\textbf{Intelligent Programming Lab, University of Michigan} (Advised by Prof. \href{https://web.eecs.umich.edu/~xwangsd/}{Xinyu Wang}.) \hfill 2021 | 2023
+\textbf{Intelligent Programming Lab, University of Michigan} (Advised by Prof. \href{https://web.eecs.umich.edu/~xwangsd/}{Xinyu Wang}) \hfill 2021 | 2023
 \begin{itemize}
     \item Developed \textbf{SlabCity}, a whole-query optimization system leveraging program synthesis.
 \end{itemize}
@@ -100,17 +100,17 @@ Bachelor of Science, Electrical and Computer Engineering%
 % Publications section
 \section*{SELECTED PUBLICATIONS}
 \begin{itemize}
-    \item \pubitem{\textbf{Y. Zhu}, T. Jin, Y. Pruksachatkun, J. Sekhon, J. Steinhardt, A. Kellermann, S. Schwettmann, M. Zaharia, I. Stoica, P. Liang, D. Kang, and others}{Establishing Best Practices for Building Rigorous Agentic Benchmarks}{NeurIPS}{2025}
+    \item \pubitem{\textbf{Y. Zhu}, T. Jin, Y. Pruksachatkun, J. Sekhon, J. Steinhardt, A. Kellermann, S. Schwettmann, M. Zaharia, I. Stoica, P. Liang, D. Kang, and others}{Establishing Best Practices for Building Rigorous Agentic Benchmarks}{NeurIPS}{2025}.
     \item \pubitem{\textbf{Y. Zhu}, A. Kellermann, A. Gupta, P. Li, R. Fang, R. Bindu, D. Kang}{Teams of LLM Agents Can Exploit Zero-Day Vulnerabilities}{Preprint}{2025}.
     \item \pubitem{\textbf{Y. Zhu}, A. Kellermann, D. Bowman, D. Kang, and others}{CVE-Bench: A Benchmark for AI Agents' Ability to Exploit Real-World Web Application Vulnerabilities}{ICML}{2025} Spotlight.
     \item \pubitem{\textbf{Y. Zhu}, T. Jin, S. Baziotis, C. Zhang, C. Mendis, D. Kang}{Database-Agnostic Online Approximate Query Processing with A Priori Error Guarantees}{SIGMOD}{2025}.
     \item \pubitem{\textbf{Y. Zhu}, D. Kang}{Efficient Approximate Query Processing with Block Sampling}{CIDR}{2025}.
     \item \pubitem{\textbf{Y. Zhu}, J. Liu, F. Lai, M. Chowdhury}{FedTrans: Efficient Federated Learning via Multi-Model Transformation}{MLSys}{2024}.
-    \item \pubitem{B. Yu, \textbf{Y. Zhu}, D. Kang, P. He}{UTBoost: Rigorous Evaluation of Coding Agents on SWE-Bench}{ACL Main}{2025}
-    \item \pubitem{R. Dong, J. Liu, \textbf{Y. Zhu}, C. Yan, B. Mozafari, X. Wang}{SlabCity: Whole-Query Optimization using Program Synthesis
-    \item \pubitem{T. Jin, \textbf{Y. Zhu}, D. Kang}{ELT-Bench: An End-to-End Benchmark for Evaluating AI Agents on ELT Pipelines}{VLDB}{2026} 
-    \item \pubitem{C. Hu, \textbf{Y. Zhu}, A. Kellermann, C. Biddulph, S. Waiwitlikhit, J. Benn, D. Kang}{Breaking Barriers: Do Reinforcement Post Training Gains Transfer To Unseen Domains?}{Preprint}{2025}
-    }{PVLDB}{2023}.
+    \item \pubitem{T. Jin, \textbf{Y. Zhu}, D. Kang}{ELT-Bench: An End-to-End Benchmark for Evaluating AI Agents on ELT Pipelines}{VLDB}{2026}.
+    \item \pubitem{T. Jin, Y. Choi, \textbf{Y. Zhu}, D. Kang}{Text-to-SQL Benchmarks are Broken: An In-Depth Analysis of Annotation Errors}{CIDR}{2026}.
+    \item \pubitem{B. Yu, \textbf{Y. Zhu}, D. Kang, P. He}{UTBoost: Rigorous Evaluation of Coding Agents on SWE-Bench}{ACL Main}{2025}.
+    \item \pubitem{C. Hu, \textbf{Y. Zhu}, A. Kellermann, C. Biddulph, S. Waiwitlikhit, J. Benn, D. Kang}{Breaking Barriers: Do Reinforcement Post Training Gains Transfer to Unseen Domains?}{Preprint}{2025}.
+    \item \pubitem{R. Dong, J. Liu, \textbf{Y. Zhu}, C. Yan, B. Mozafari, X. Wang}{SlabCity: Whole-Query Optimization using Program Synthesis}{VLDB}{2023}.
     % \item \pubitem{Shijing Yuan, Jie Li, \textbf{Yuxuan Zhu}, Chentao Wu, Yue Ding}{An Energy-efficient Computing Offloading Framework for Blockchain-enaled Video Streaming Systems}{GlobeCom}{2022}
     % \item \pubitem{Shijing Yuan, Jie Li, Jinghao Liang, \textbf{Yuxuan Zhu}, Xiang Yu, Jianping Chen, Chentao Wu}{Sharding for Blockchain based Mobile Edge Computing System: A Deep Reinforcement Learning Approach}{GlobeCom}{2021}
 \end{itemize}
@@ -131,10 +131,19 @@ Bachelor of Science, Electrical and Computer Engineering%
     % \item \textbf{Honorable Mention by Judgers} in COVID-19 Challenges Competition. \hfill Jul. 2020
 \end{itemize}
 
+\section*{Technical Skills}
+\begin{itemize}
+\item Languages: Python, C/C++, SQL
+\item ML/LLMs: PyTorch, Transformers, VeRL, SkyRL, Tinker
+\item Agent / Orchestration: LangChain, OpenAI APIs, MCPs / function-calling
+\item Data / Systems: PostgreSQL, Spark, Ray, Docker
+\item Security / Evaluation: Web security (XSS, SQLi, RCE, CVEs), fuzzing, benchmark design, statistical evaluation methods
+\end{itemize}
 
 \section*{TEACHING \& SERVICE}
 \begin{itemize}
-    \item Artifact reviewer, SIGMOD \hfill 2024
+    \item Reviewer, ICLR \hfill 2025
+    \item Artifact reviewer, SIGMOD \hfill 2024 | 2025
     \item Grader, MATH 417 Matrix Algebra, University of Michigan \hfill 2022
     % \item Winter program in St. Petersburg Polytechnic University \hfill 2020
 \end{itemize}
