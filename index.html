@@ -106,91 +106,167 @@
             <!-- Publication-->
             <section class="resume-section" id="publication">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Publication</h2>
-                    <ul class="fa-ul mb-0 text-main bullet">
-                        <li>Accelerate Aggregation Queries with JOINs over Unstructured Data (In submission)</li>
-                        <a href="assets/pub/joins_tech_report.pdf">[Techical Report]</a>
-                        <hr />
-                        <li><a href="assets/pub/rl-generalizability.pdf">Breaking Barriers: Do Reinforcement Post Training Gains Transfer To Unseen Domains?</a></li>
-                        Chuxuan Hu,
-                        <u>Yuxuan Zhu,</u>
-                        Antony Kellermann, Caleb Biddulph, Suppakit Waiwitlikhit, Jason Benn, Daniel Kang
-                        <br />
-                        <em>Preprint</em>
-                        <hr />
-                        <li><a href="assets/pub/teams_of_agents.pdf">Teams of LLM Agents can Exploit Zero-Day Vulnerabilities</a></li>
-                        <u>Yuxuan Zhu,</u>
-                        Antony Kellermann, Akul Gupta, Philip Li, Richard Fang, Rohan Bindu, Daniel Kang
-                        <br />
-                        <em>Preprint</em>
-                        <hr />
-                        <li><a href="assets/pub/abc.pdf">Establishing Best Practices for Building Rigorous Agentic Benchmarks</a></li>
-                        <u>Yuxuan Zhu,</u>
-                        Tengjun Jin, Yada Pruksachatkun, Andy Zhang, Shu Liu, Sasha Cui, Sayash Kapoor, Shayne Longpre, Kevin Meng, Rebecca Weiss, Fazl Barez, Rahul Gupta, Jwala Dhamala, Jacob Merizian, Mario Giulianelli, Harry Coppock, Cozmin Ududec, Jasjeet Sekhon, Jacob Steinhardt, Antony Kellermann, Sarah Schwettmann, Matei Zaharia, Ion Stoica, Percy Liang, Daniel Kang
-                        <br />
-                        <em>NeurIPS 2025, first place at Berkeley AgentX Summit (Benchmark & Evaluation Track)</em>
-                        <hr />
-                        <li><a href="assets/pub/eltbench.pdf">ELT-Bench: An End-to-End Benchmark for Evaluating AI Agents on ELT Pipelines</a></li>
-                        Tengjun Jin,
-                        <u>Yuxuan Zhu,</u>
-                        Daniel Kang
-                        <br />
-                        <em>VLDB 2026</em>
-                        <hr />
-                        <li><a href="assets/pub/utboost.pdf">UTBoost: Rigorous Evaluation of Coding Agents on SWE-Bench</a></li>
-                        Boxi Yu,
-                        <u>Yuxuan Zhu,</u>
-                        Pinjia He, Daniel Kang
-                        <br />
-                        <em>ACL main 2025</em>
-                        <hr />
-                        <li><a href="assets/pub/cvebench.pdf">CVE-Bench: A Benchmark for AI Agents' Ability to Exploit Real-World Web Application Vulnerabilities</a></li>
-                        <u>Yuxuan Zhu,</u>
-                        Antony Kellermann, Dylan Bowman, Philip Li, Akul Gupta, Adarsh Danda, Richard Fang, Conner Jensen, Eric Ihli, Jason Benn, Jet Geronimo, Avi Dhir, Sudhit Rao, Kaicheng Yu, Twm Stone, Daniel Kang
-                        <br />
-                        <em>ICML 2025 Spotlight, SafeBench winner, adopted by</em>
-                        <a href="https://github.com/usnistgov/aisi-cyber-evals">US AISI,</a>
-                        second place at Berkeley AgentX Summit (AI Safety & Alignment Track)
-                        <hr />
-                        <li><a href="assets/pub/pilotdb.pdf">PilotDB: Database-Agnostic Online Approximate Query Processing with A Priori Error Guarantees</a></li>
-                        <u>Yuxuan Zhu,</u>
-                        Tengjun Jin, Stefanos Baziotis, Chengsong Zhang, Charith Mendis, Daniel Kang
-                        <br />
-                        <em>SIGMOD 2025</em>
-                        <hr />
-                        <li><a href="assets/pub/pilotdb_cidr.pdf">Efficient Approximate Query Processing with Block Sampling</a></li>
-                        <u>Yuxuan Zhu,</u>
-                        Daniel Kang
-                        <br />
-                        <em>CIDR 2025</em>
-                        <hr />
-                        <li><a href="assets/pub/fedtrans.pdf">FedTrans: Efficient Federated Learning via Multi-Model Transformation</a></li>
-                        <u>Yuxuan Zhu,</u>
-                        Jiachen Liu, Fan Lai, Mosharaf Chowdhury
-                        <br />
-                        <em>MLSys 2024</em>
-                        <hr />
-                        <li><a href="assets/pub/slabcity.pdf">SlabCity: Whole-Query Optimization using Program Synthesis</a></li>
-                        Rui Dong, Jie Liu,
-                        <u>Yuxuan Zhu,</u>
-                        Cong Yan, Barzan Mozafari, Xinyu Wang
-                        <br />
-                        <em>VLDB 2023</em>
-                        <hr />
-                        <li><a href="assets/pub/video.pdf">An Energy-efficient Computing Offloading Framework for Blockchain-enaled Video Streaming Systems</a></li>
-                        Shijing Yuan, Jie Li,
-                        <u>Yuxuan Zhu,</u>
-                        Chentao Wu, Yue Ding
-                        <br />
-                        <em>GlobeCom 2022</em>
-                        <hr />
-                        <li><a href="assets/pub/sharding.pdf">Sharding for Blockchain based Mobile Edge Computing System: A Deep Reinforcement Learning Approach</a></li>
-                        Shijing Yuan, Jie Li, Jinghao Liang,
-                        <u>Yuxuan Zhu,</u>
-                        Xiang Yu, Jianping Chen, Chentao Wu
-                        <br />
-                        <em>GlobeCom 2021</em>
-                    </ul>
+                    <div class="d-flex align-items-center mb-5">
+                        <h2 class="mb-0">Publication</h2>
+                        <button class="btn btn-outline-primary btn-sm ms-3" id="toggle-publications" type="button" onclick='var fa = document.getElementById("first-author-publications"); var all = document.getElementById("all-publications"); if (all.style.display === "none") { fa.style.display = "none"; all.style.display = "block"; this.textContent = "Show Selected"; } else { all.style.display = "none"; fa.style.display = "block"; this.textContent = "Show Full List"; }'>Show Full List</button>
+                    </div>
+                    <div id="first-author-publications">
+                        <ul class="fa-ul mb-0 text-main bullet">
+                            <li>Accelerating Approximate Analytical Join Queries over Unstructured Data with Statistical Guarantees</li>
+                            <u>Yuxuan Zhu,</u>
+                            Tengjun Jin, Chenghao Mo, Daniel Kang
+                            <br />
+                            <em>SIGMOD 2026</em>
+                            <hr />
+                            <li><a href="assets/pub/teams_of_agents.pdf">Teams of LLM Agents can Exploit Zero-Day Vulnerabilities</a></li>
+                            <u>Yuxuan Zhu,</u>
+                            Antony Kellermann, Akul Gupta, Philip Li, Richard Fang, Rohan Bindu, Daniel Kang
+                            <br />
+                            <em>EACL main 2026</em>
+                            <hr />
+                            <li><a href="assets/pub/abc.pdf">Establishing Best Practices for Building Rigorous Agentic Benchmarks</a></li>
+                            <u>Yuxuan Zhu,</u>
+                            Tengjun Jin, Yada Pruksachatkun, Andy Zhang, Shu Liu, Sasha Cui, Sayash Kapoor, Shayne Longpre, Kevin Meng, Rebecca Weiss, Fazl Barez, Rahul Gupta, Jwala Dhamala, Jacob Merizian, Mario Giulianelli, Harry Coppock, Cozmin Ududec, Jasjeet Sekhon, Jacob Steinhardt, Antony Kellermann, Sarah Schwettmann, Matei Zaharia, Ion Stoica, Percy Liang, Daniel Kang
+                            <br />
+                            <em>NeurIPS 2025, first place at Berkeley AgentX Summit (Benchmark & Evaluation Track)</em>
+                            <hr />
+                            <li><a href="assets/pub/cvebench.pdf">CVE-Bench: A Benchmark for AI Agents' Ability to Exploit Real-World Web Application Vulnerabilities</a></li>
+                            <u>Yuxuan Zhu,</u>
+                            Antony Kellermann, Dylan Bowman, Philip Li, Akul Gupta, Adarsh Danda, Richard Fang, Conner Jensen, Eric Ihli, Jason Benn, Jet Geronimo, Avi Dhir, Sudhit Rao, Kaicheng Yu, Twm Stone, Daniel Kang
+                            <br />
+                            <em>ICML 2025 Spotlight, SafeBench winner, adopted by</em>
+                            <a href="https://github.com/usnistgov/aisi-cyber-evals">US AISI,</a>
+                            second place at Berkeley AgentX Summit (AI Safety & Alignment Track)
+                            <hr />
+                            <li><a href="assets/pub/pilotdb.pdf">PilotDB: Database-Agnostic Online Approximate Query Processing with A Priori Error Guarantees</a></li>
+                            <u>Yuxuan Zhu,</u>
+                            Tengjun Jin, Stefanos Baziotis, Chengsong Zhang, Charith Mendis, Daniel Kang
+                            <br />
+                            <em>SIGMOD 2025</em>
+                            <hr />
+                            <li><a href="assets/pub/pilotdb_cidr.pdf">Efficient Approximate Query Processing with Block Sampling</a></li>
+                            <u>Yuxuan Zhu,</u>
+                            Daniel Kang
+                            <br />
+                            <em>CIDR 2025</em>
+                            <hr />
+                            <li><a href="assets/pub/fedtrans.pdf">FedTrans: Efficient Federated Learning via Multi-Model Transformation</a></li>
+                            <u>Yuxuan Zhu,</u>
+                            Jiachen Liu, Fan Lai, Mosharaf Chowdhury
+                            <br />
+                            <em>MLSys 2024</em>
+                            <hr />
+                        </ul>
+                    </div>
+                    <div id="all-publications" style="display: none">
+                        <ul class="fa-ul mb-0 text-main bullet">
+                            <li>Accelerating Approximate Analytical Join Queries over Unstructured Data with Statistical Guarantees</li>
+                            <u>Yuxuan Zhu,</u>
+                            Tengjun Jin, Chenghao Mo, Daniel Kang
+                            <br />
+                            <em>SIGMOD 2026</em>
+                            <hr />
+                            <li><a href="assets/pub/teams_of_agents.pdf">Teams of LLM Agents can Exploit Zero-Day Vulnerabilities</a></li>
+                            <u>Yuxuan Zhu,</u>
+                            Antony Kellermann, Akul Gupta, Philip Li, Richard Fang, Rohan Bindu, Daniel Kang
+                            <br />
+                            <em>EACL main 2026</em>
+                            <hr />
+                            <li><a href="https://arxiv.org/abs/2601.08778">Pervasive Annotation Errors Break Text-to-SQL Benchmarks and Leaderboards</a></li>
+                            Tengjun Jin, Yoojin Choi,
+                            <u>Yuxuan Zhu,</u>
+                            Daniel Kang
+                            <br />
+                            <em>VLDB 2026</em>
+                            <hr />
+                            <li><a href="https://vldb.org/cidrdb/papers/2026/p5-jin.pdf">Text-to-SQL Benchmarks are Broken: An In-Depth Analysis of Annotation Errors</a></li>
+                            Tengjun Jin, Yoojin Choi,
+                            <u>Yuxuan Zhu,</u>
+                            Daniel Kang
+                            <br />
+                            <em>CIDR 2026</em>
+                            <hr />
+                            <li><a href="assets/pub/rl-generalizability.pdf">Breaking Barriers: Do Reinforcement Post Training Gains Transfer To Unseen Domains?</a></li>
+                            Chuxuan Hu,
+                            <u>Yuxuan Zhu,</u>
+                            Antony Kellermann, Caleb Biddulph, Suppakit Waiwitlikhit, Jason Benn, Daniel Kang
+                            <br />
+                            <em>ICLR 2026</em>
+                            <hr />
+                            <li><a href="https://arxiv.org/abs/2601.11868">Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces</a></li>
+                            <em>ICLR 2026</em>
+                            <hr />
+                            <li><a href="https://arxiv.org/abs/2510.11977">Holistic Agent Leaderboard: The Missing Infrastructure for AI Agent Evaluation</a></li>
+                            <em>ICLR 2026</em>
+                            <hr />
+                            <li><a href="assets/pub/eltbench.pdf">ELT-Bench: An End-to-End Benchmark for Evaluating AI Agents on ELT Pipelines</a></li>
+                            Tengjun Jin,
+                            <u>Yuxuan Zhu,</u>
+                            Daniel Kang
+                            <br />
+                            <em>VLDB 2026</em>
+                            <hr />
+                            <li><a href="assets/pub/abc.pdf">Establishing Best Practices for Building Rigorous Agentic Benchmarks</a></li>
+                            <u>Yuxuan Zhu,</u>
+                            Tengjun Jin, Yada Pruksachatkun, Andy Zhang, Shu Liu, Sasha Cui, Sayash Kapoor, Shayne Longpre, Kevin Meng, Rebecca Weiss, Fazl Barez, Rahul Gupta, Jwala Dhamala, Jacob Merizian, Mario Giulianelli, Harry Coppock, Cozmin Ududec, Jasjeet Sekhon, Jacob Steinhardt, Antony Kellermann, Sarah Schwettmann, Matei Zaharia, Ion Stoica, Percy Liang, Daniel Kang
+                            <br />
+                            <em>NeurIPS 2025, first place at Berkeley AgentX Summit (Benchmark & Evaluation Track)</em>
+                            <hr />
+                            <li><a href="assets/pub/cvebench.pdf">CVE-Bench: A Benchmark for AI Agents' Ability to Exploit Real-World Web Application Vulnerabilities</a></li>
+                            <u>Yuxuan Zhu,</u>
+                            Antony Kellermann, Dylan Bowman, Philip Li, Akul Gupta, Adarsh Danda, Richard Fang, Conner Jensen, Eric Ihli, Jason Benn, Jet Geronimo, Avi Dhir, Sudhit Rao, Kaicheng Yu, Twm Stone, Daniel Kang
+                            <br />
+                            <em>ICML 2025 Spotlight, SafeBench winner, adopted by</em>
+                            <a href="https://github.com/usnistgov/aisi-cyber-evals">US AISI,</a>
+                            second place at Berkeley AgentX Summit (AI Safety & Alignment Track)
+                            <hr />
+                            <li><a href="assets/pub/pilotdb.pdf">PilotDB: Database-Agnostic Online Approximate Query Processing with A Priori Error Guarantees</a></li>
+                            <u>Yuxuan Zhu,</u>
+                            Tengjun Jin, Stefanos Baziotis, Chengsong Zhang, Charith Mendis, Daniel Kang
+                            <br />
+                            <em>SIGMOD 2025</em>
+                            <hr />
+                            <li><a href="assets/pub/utboost.pdf">UTBoost: Rigorous Evaluation of Coding Agents on SWE-Bench</a></li>
+                            Boxi Yu,
+                            <u>Yuxuan Zhu,</u>
+                            Pinjia He, Daniel Kang
+                            <br />
+                            <em>ACL main 2025</em>
+                            <hr />
+                            <li><a href="assets/pub/pilotdb_cidr.pdf">Efficient Approximate Query Processing with Block Sampling</a></li>
+                            <u>Yuxuan Zhu,</u>
+                            Daniel Kang
+                            <br />
+                            <em>CIDR 2025</em>
+                            <hr />
+                            <li><a href="assets/pub/fedtrans.pdf">FedTrans: Efficient Federated Learning via Multi-Model Transformation</a></li>
+                            <u>Yuxuan Zhu,</u>
+                            Jiachen Liu, Fan Lai, Mosharaf Chowdhury
+                            <br />
+                            <em>MLSys 2024</em>
+                            <hr />
+                            <li><a href="assets/pub/slabcity.pdf">SlabCity: Whole-Query Optimization using Program Synthesis</a></li>
+                            Rui Dong, Jie Liu,
+                            <u>Yuxuan Zhu,</u>
+                            Cong Yan, Barzan Mozafari, Xinyu Wang
+                            <br />
+                            <em>VLDB 2023</em>
+                            <hr />
+                            <li><a href="assets/pub/video.pdf">An Energy-efficient Computing Offloading Framework for Blockchain-enaled Video Streaming Systems</a></li>
+                            Shijing Yuan, Jie Li,
+                            <u>Yuxuan Zhu,</u>
+                            Chentao Wu, Yue Ding
+                            <br />
+                            <em>GlobeCom 2022</em>
+                            <hr />
+                            <li><a href="assets/pub/sharding.pdf">Sharding for Blockchain based Mobile Edge Computing System: A Deep Reinforcement Learning Approach</a></li>
+                            Shijing Yuan, Jie Li, Jinghao Liang,
+                            <u>Yuxuan Zhu,</u>
+                            Xiang Yu, Jianping Chen, Chentao Wu
+                            <br />
+                            <em>GlobeCom 2021</em>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
